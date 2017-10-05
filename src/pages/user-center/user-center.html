@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>用户中心</ion-title>
+  </ion-navbar>
+</ion-header>
+  
+  <ion-content padding>  
+    <ion-avatar class="userFace">
+     <img src="{{user.face}}" class="avatarImage">
+    </ion-avatar>
+    <button ion-button block (click)="logout()"> 注销</button>
+  </ion-content>

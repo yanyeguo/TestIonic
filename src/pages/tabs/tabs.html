@@ -1,5 +1,7 @@
-<ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>
+<!-- <ion-tabs id="mainTabs" selectedIndex="1"> -->
+<ion-tabs #mainTabs >
+  <ion-tab [root]="tab1Root" tabTitle="主页" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab0Root" tabTitle="朋友圈"  tabBadge="8" tabBadgeStyle="danger" tabIcon="aperture"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="联系人" tabIcon="contacts"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="用户中心" tabIcon="person"></ion-tab>
 </ion-tabs>

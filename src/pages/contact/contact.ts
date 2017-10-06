@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { NavController, LoadingController, ToastController, ModalController, ViewController } from 'ionic-angular';
 
 import { RegisterPage } from "../register/register";
-import { UserCenterPage } from "../user-center/user-center";
+
 import { ImagePicker } from '@ionic-native/image-picker';
 @Component({
   selector: 'page-contact',

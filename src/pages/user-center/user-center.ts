@@ -1,9 +1,9 @@
 
 import { Component } from '@angular/core';
-import { NavController, LoadingController,  ToastController, ModalController } from 'ionic-angular';
+import { NavController,   ModalController } from 'ionic-angular';
 
 import { ContactPage } from "../contact/contact";
-import { ImagePicker } from '@ionic-native/image-picker';
+
 @Component({
   selector: 'page-user-center',
   templateUrl: 'user-center.html'
@@ -11,7 +11,7 @@ import { ImagePicker } from '@ionic-native/image-picker';
 export class UserCenterPage {
 
   user;
-  constructor(private imagePic: ImagePicker, public navCtrl: NavController, private loadingCtrl: LoadingController, private toastCtrl: ToastController, private modelCtrl: ModalController) {
+  constructor( public navCtrl: NavController, private modelCtrl: ModalController) {
     this.user = {};
     this.user.username = '';
     this.user.password = '';
